@@ -26,7 +26,7 @@ import PresaleDetails from './pages/presales/PresaleDetails';
 
 
 const client = new ApolloClient({
-  uri: "http://127.0.0.1:8000/graphql/",
+  uri: "https://bescscan.io/graphiql",
   cache: new InMemoryCache(),
 });
 
