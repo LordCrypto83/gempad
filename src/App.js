@@ -26,7 +26,7 @@ import PresaleDetails from './pages/presales/PresaleDetails';
 
 
 const client = new ApolloClient({
-  uri: "https://flyby-router-demo.herokuapp.com/",
+  uri: "http://193.23.127.117:8000/graphiql",
   cache: new InMemoryCache(),
 });
 
