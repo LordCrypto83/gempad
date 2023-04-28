@@ -30,11 +30,11 @@ const client = new ApolloClient({
   cache: new InMemoryCache(),
 });
 
-const BESC = {
+const bscChain = {
   id: 535037,
   name: 'BeanEco SmartChain',
-  network: 'BeanEco SmartChain',
-  iconUrl: besc,
+  network: 'BeanEco_SmartChain',
+  iconUrl: bsc,
   iconBackground: 'none',
   nativeCurrency: {
     decimals: 18,
@@ -45,14 +45,14 @@ const BESC = {
     default: 'https://mainnet-rpc.bescscan.io',
   },
   blockExplorers: {
-    default: { name: 'BSCScan', url: 'https://testnet.bscscan.com/' },
+    default: { name: 'BESCscan', url: 'https://bescscan.io' },
   },
   testnet: false,
 };
 
 const { chains, provider } = configureChains(
   [
-    BESC,
+    bscChain,
     chain.mainnet
   ],
   [jsonRpcProvider({ rpc: chain => ({ http: chain.rpcUrls.default }) })]
