@@ -1,0 +1,133 @@
+.input-container .outlined-input-1 {
+    width: 49%;
+}
+
+.input-container .date-time-input {
+    width: 49%;
+}
+
+.input-container .date-time-input .MuiFormControl-root {
+    width: 100% !important;
+}
+
+.outlined-input-1 {
+    width: 100%;
+
+    .label {
+        font-size: 12px;
+        font-weight: 500;
+        margin-bottom: 6px;
+    }
+
+    .helper {
+        text-align: left;
+        color: $green_2;
+        margin-bottom: 0;
+        margin-top: 6px;
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    .warning {
+        text-align: left;
+        margin-bottom: 0;
+        margin-top: 6px;
+        font-size: 16px;
+        font-weight: 500;
+        color: $yellow_2;
+    }
+
+    .error {
+        font-size: 12px;
+        font-weight: 500;
+        margin-bottom: 6px;
+        color: $red_2;
+    }
+
+    .MuiTextField-root {
+        input {
+            color: #fff;
+        }
+
+        label {
+            color: $grey_2;
+            font-family: 'Rajdhani', sans-serif !important;
+        }
+
+        fieldset {
+            border-color: $grey_2,
+        }
+
+        &:hover fieldset {
+            border-color: #fff !important;
+        }
+
+        .Mui-focused fieldset {
+            border-color: $cyan_1 !important;
+        }
+
+        .MuiInputLabel-shrink {
+            color: $cyan_1 !important;
+        }
+    }
+}
+
+.outlined-input-2,
+.multiline-input {
+    @extend .outlined-input-1;
+
+    .css-1sqnrkk-MuiInputBase-input-MuiOutlinedInput-input {
+        color: #fff;
+        font-family: 'Rajdhani', sans-serif !important;
+    }
+}
+
+.outlined-select {
+    @extend .outlined-input-1;
+
+    .MuiInputBase-root {
+        color: #fff;
+    }
+
+    .MuiPaper-root {
+        background: transparentize($grey_2, 0.7);
+    }
+}
+
+.date-time-input {
+    height: 56px;
+    margin-bottom: 18px;
+
+    .ant-picker {
+        width: 100%;
+        height: 100%;
+        padding: 0 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 6px;
+        color: $grey_2;
+        font-family: 'Rajdhani', sans-serif !important;
+        background: none;
+        border: 2px #666 solid;
+
+        .ant-picker-input input {
+            color: #fff;
+            // font-size: $fsize4;
+        }
+
+        &:hover {
+            border-color: white;
+        }
+
+        &:focus {
+            border-color: cyan;
+            outline: none;
+            // box-shadow: 0px 0px 10px rgba(18, 99, 241, 0.6)
+        }
+    }
+}
+
+.switch {
+    color: #fff;
+}

@@ -1,0 +1,219 @@
+@import "./config";
+
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+// @font-face {
+//     font-family: 'Montserrat';
+//     src: url('../fonts/montserrat.regular.ttf');
+// }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Rajdhani', sans-serif;
+    color: $grey_2;
+    background: #161c24;
+
+    &::-webkit-scrollbar {
+        width: 10px;
+        border-radius: 50%;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: $grey_2;
+        border-radius: 5px;
+    }
+}
+
+a {
+    text-decoration: unset;
+    color: unset;
+
+    &:hover {
+        color: unset;
+    }
+}
+
+button {
+    border: unset;
+    font-family: 'Rajdhani', sans-serif;
+    background: unset;
+    cursor: pointer;
+
+    &:hover {
+        opacity: 0.6;
+    }
+
+    &:disabled {
+        opacity: 0.5;
+        cursor: not-allowed !important;
+    }
+}
+
+.btn {
+    cursor: pointer;
+}
+
+.page-content {
+    width: calc(100vw - 290px);
+    margin-inline-start: 280px;
+    // z-index: -1;
+
+    .space {
+        height: 92px;
+    }
+}
+
+.default-btn {
+    @extend .btn;
+    color: #ffffff;
+    background-color: $cyan_2;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+    font-weight: 700;
+    min-width: 64px;
+    text-align: center;
+    padding: 6px 16px;
+    border-radius: 8px;
+    box-shadow: #59f1f63d 0px 8px 16px 0px;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+        box-shadow: none;
+        opacity: 80%;
+    }
+
+    &:disabled {
+        box-shadow: none;
+        opacity: 50%;
+    }
+}
+
+.input-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.tips {
+    width: 100%;
+    height: 56px;
+    border: 2px $cyan_1 solid;
+    border-radius: 8px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    span {
+        margin-inline-start: 24px;
+        color: $cyan_1;
+    }
+
+    a {
+        color: $cyan_2;
+        font-weight: 700;
+    }
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+input {
+    font-family: 'Rajdhani', sans-serif !important;
+}
+
+.ant-modal-content {
+    background: #212b36;
+    color: #ffffff;
+
+    .ant-modal-close-icon {
+        color: #fff;
+    }
+
+    .ant-modal-header {
+        background: #212b36;
+        border-color: transparentize($grey_1, 0.8);
+
+        .ant-modal-title {
+            color: #ffffff;
+        }
+    }
+
+    .ant-modal-footer {
+        border-color: transparentize($grey_1, 0.8);
+
+
+    }
+}
+
+.font-green {
+    color: $green_2;
+}
+
+.font-yellow {
+    color: $yellow_2;
+}
+
+.font-red {
+    color: $red_2;
+}
+
+.font-blue {
+    color: $blue_2;
+}
+
+.font-cyan {
+    color: $cyan_2;
+}
+
+.bg-green {
+    background: #54D62C;
+}
+
+.bg-yellow {
+    background: #FFC107;
+}
+
+.bg-red {
+    background: $red_1;
+}
+
+.bg-blue {
+    background: #3366FF;
+}
+
+.bg-cyan {
+    background: #08ADB3;
+}
+
+.bg-grey {
+    background: #919EAB;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.light {
+    font-weight: 200;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.extra-bold {
+    font-weight: 900;
+}
